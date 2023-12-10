@@ -1,0 +1,8 @@
+<div *ngIf="players && players.length > 0">
+    <h2>Player List</h2>
+    <ul>
+      <li *ngFor="let player of players">
+        {{ player.playerName }} - Total Matches: {{ player.totalMatches }}
+      </li>
+    </ul>
+  </div>
